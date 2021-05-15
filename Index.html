@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="css/Estilos.css">
+    <script src="js/javascript.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="Imagenes/istockphoto-700439034-1024x1024.jpg" alt="">
+        </div>
+        <nav>
+            <ul class="Menu">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Paginas/FGarciaLorca.html">F. García Lorca</a></li>
+                <li><a href="Paginas/Tabla.html">Tablas de datos</a></li>
+                <li><button id="myBtn3">Acerca de</button></li>
+            </ul>
+        </nav>   
+    </header>
+    <main>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <br>
+                    <h3 id="abouth3">Acerca de este proyecto</h3>
+                    <br>
+                    <p id="about">Esta es una página web realizada por Alejandro Noé para la asignatura de TIC 
+                                    del instituto IES Salinas.
+                    </p>
+                </div>        
+            </div>
+            <script>
+                var modal = document.getElementById("myModal");
+                var btn = document.getElementById("myBtn3");
+                var span = document.getElementsByClassName("close")[0];
+                btn.onclick = function() {
+                  modal.style.display = "block";
+                }
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
+                </script>
+
+        <section class="sec">
+            <div>
+                <img src="Imagenes/1478946420671.jpg" width="300" class="img">
+            </div>
+            <div>
+                <h2>La importancia de leer</h2>
+                <br>
+                <p>La lectura aumenta la comprensión, atención, observación, concentración, reflexión, pensamiento crítico y memoria de las personas. La lectura de libros nos hace más inteligentes. La lectura despierta la curiosidad y alimenta la imaginación. Leer activa la inspiración, imaginación y el surgimiento de ideas.</p>
+                <br>
+
+                    <p>Lamentablemente no son pocas las personas no leen por falta de tiempo o de ganas. <span id="dots">...</span><span id="more"> Piensan que no tiene sentido habiendo otras opciones de entretenimiento o que los libros no están hechos para ellas. No se paran a pensar qué es lo que la lectura de libros les puede llegar a aportar… Quizás nadie se lo haya contado. O sí, pero ya hayan tomado su decisión. Para todas esas personas, y también para afianzar la confianza en aquellas personas que ya son lectoras, destaco una serie de beneficios que demuestran porque es importante leer.</span></p>
+                    <br>
+                    <button onclick="myFunction()" id="myBtn">Leer más</button>
+                    <br><br>
+                    <a href="https://www.julianmarquina.es/beneficios-de-la-lectura-que-demuestran-porque-es-importante-leer-libros/" style="color: rgb(253, 255, 112)">Pincha aquí para ir a una página que trata el tema</a>
+            </div>    
+        </section>
+
+        <section >
+            
+            <div>
+                    <h2> Weber panteó tres definiciones para la lectura</h2>
+                    <br>
+                     <p>  Saber pronunciar las palabras escritas, 
+                          Saber identificar las palabras y el significado de cada una de ellas y
+                          Saber extraer y comprender el significado de un texto.</p>
+            </div>
+            <br>
+            <div>
+                <iframe width="800" height="400" src="https://www.youtube.com/embed/G_Slr_-mO_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>  
+    <footer>
+        <h4> → Design by Noé ← </h4>
+    </footer>
+</body>
+</html>

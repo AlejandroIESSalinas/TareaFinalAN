@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="stylesheet" type="text/css" href="../css/Estilos.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../Imagenes/istockphoto-700439034-1024x1024.jpg" alt="">
+        </div>
+        <nav>
+            <ul class="Menu">
+                <li><a href="../Index.html">Inicio</a></li>
+                <li><a href="./FGarciaLorca.html">F. García Lorca</a></li>
+                <li><a href="./Tabla.html">Tabla de datos</a></li>
+                <li><button id="myBtn3">Acerca de</button></li>
+            </ul>
+        </nav>   
+    </header>
+    <main>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <br>
+            <h3 id="abouth3">Acerca de este proyecto</h3>
+            <br>
+            <p id="about">Esta es una página web realizada por Alejandro Noé para la asignatura de TIC 
+                            del instituto IES Salinas.
+            </p>
+        </div>        
+    </div>
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn3");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+            modal.style.display = "none";
+            }
+        }
+        </script>
+        
+        <section>
+                  <h2>Tabla de algunas de las mejores obras de España</h2>
+                  <br>
+           <table>
+               <tr>
+                   <th>Obra</th>
+                   <th>autor</th>
+                   <th>Fecha de publicación</th>
+               </tr>
+               <tr>
+                   <td>Lazarillo de Tormes</td>
+                   <td>Desconocido</td>
+                   <td>1554</td>
+               </tr>
+               <tr>
+                <td>Nada</td>
+                <td>Carmen Laforet</td>
+                <td>1944</td>
+               </tr>
+               <tr>
+                <td>El camino</td>
+                <td>Miguel Delibes</td>
+                <td>1950</td>
+            </tr>
+           </table>
+        </section>
+        <section>
+            <h2>Tabla de algunas de las mejores obras del mundo</h2>
+            <br>
+           <table>
+               <tr>
+                   <th>Nombre</th>
+                   <th>Editorial</th>
+                   <th>Autor</th>
+               </tr>
+               <tr>
+                   <td>Don Quijote de La Manda I</td>
+                   <td>Anaya</td>
+                   <td>Miguel de Cervantes</td>
+               </tr>
+               <tr>
+                <td>El Principito</td>
+                <td>Andina</td>
+                <td>Antonio Saint</td>
+               </tr>
+               <tr>
+                <td>El último Emperador</td>
+                <td>Garalt</td>
+                <td>Pu-yi</td>
+            </tr>
+           </table>
+        </section>
+    </main>  
+    <footer>
+        <h4> → Design by Noé ← </h4>
+    </footer>
+</body>
+</html>

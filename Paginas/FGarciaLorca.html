@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.Garcia Lorca</title>
+    <link rel="stylesheet" type="text/css" href="../css/Estilos.css">
+    <script src="../js/javascript.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../Imagenes/istockphoto-700439034-1024x1024.jpg" alt="">
+        </div>
+        <nav>
+            <ul class="Menu">
+                <li><a href="../Index.html">Inicio</a></li>
+                <li><a href="./FGarciaLorca.html">F. García Lorca</a></li>
+                <li><a href="./Tabla.html">Tabla de datos</a></li>
+                <li><button id="myBtn3">Acerca de</button></li>
+            </ul>
+        </nav>   
+    </header>
+    <main>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <br>
+                <h3 id="abouth3">Acerca de este proyecto</h3>
+                <br>
+                <p id="about">Esta es una página web realizada por Alejandro Noé para la asignatura de TIC 
+                                del instituto IES Salinas.
+                </p>
+            </div>        
+        </div>
+        <script>
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn3");
+            var span = document.getElementsByClassName("close")[0];
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                modal.style.display = "none";
+                }
+            }
+            </script>
+        <section class="sec">
+            <div>
+                <img src="../Imagenes/41YY5EMX-2L._SX331_BO1,204,203,200_.jpg" width="300" class="img">
+            </div>
+            <div>
+                <h2>Bodas de Sangre</h2>
+                <br>
+                <p>Lorca (1898- 1936) fue un extraordinario poeta.
+                    También era un hombre fascinado por el teatro desde niño: los títeres que recorrían su Andalucía natal lo marcaron y ya adulto no solo fue dramaturgo, sino que también escribió e interpretó teatro de guiñol ( para títeres y marionetas).
+                    A partir de los años 30 su interés por el teatro crece cada vez más. Ello está relacionado con su interés por la educación del pueblo y los problemas sociales que afectaban a una convulsionada España, previo al golpe militar fascista, contra la República, que desembocó en la Guerra Civil (1936-1939).
+                    El teatro es un arte muy complejo que no solo implica un texto dramático, sino el hecho de representarlo, o sea, una puesta en escena.
+                    García Lorca estaba muy vinculado a actrices, elencos, directores, y <span id="dots2">...</span><span id="more2">él mismo opinaba a través de las acotaciones de sus obras sobre elementos tales como el vestuario, la música o la escenografía.
+                    Bodas de Sangre es una obra que se escribió a comienzos de la década de 1930. Transcurre en el campo, por eso es considerada como una tragedia rural.
+                    Muestra con realismo por momentos y por otros con una fuerte carga simbólica los problemas que padecían las zonas más pobres y marginadas de España en pleno siglo XX, como Andalucía.
+                    Sus obras de teatro están ambientadas en pequeños pueblos llenos de prejuicios y con una fuerte división en clases sociales. Las mujeres, víctimas de un patriarcado ancestral, son las protagonistas de sus obras.
+                    Entre la represión y el deseo de pasión, se mueven sus personajes.</span></p>
+                <br>
+                    
+                <button onclick="myFunction2()" id="myBtn2">Leer más</button>
+                <br>
+                <br>
+                <a href="https://es.wikipedia.org/wiki/Bodas_de_sangre " style="color: rgb(253, 255, 112);">Pincha aquí para ir a página especializada en el libro</a>
+
+            </div>    
+        </section>
+
+        <section class="sec">
+            <div>
+                <img src="../Imagenes/91yoA5O7xiL.jpg" width="300" class="img">
+            </div>
+            <div>
+                    <h2> Yerma</h2>
+                    <br>
+                     <p>  En Yerma, Lorca nos muestra su especial visión del amor desde un ángulo particular: 
+                         el de la procreación. Yerma es la tragedia de la esterilidad, del deseo maternal frustrado. 
+                         Yerma representa a la mujer llena de vitalidad que desea realizarse como tal y su marido es un personaje mezquinamente desapasionado. La imposibilidad de la llegada del hijo representa y resume el drama de la falta de amor entre ellos. 
+                         Todo esto presentado en el marco rural <span id="dots1">...</span><span id="more1"> que aprisiona y encierra ancestrales pasiones y prejuicios.
+                         El tema principal es el instinto frente a la represión, ya que Yerma lucha porque su instinto le dice que debe ser madre, pero no lo logra, y por eso termina odiándose. 
+                         Por un lado, a través de un gesto radical, se libera de la esterilidad de Juan, aunque no de su tragedia personal. Por otra parte, la determinación de Yerma de matar a Juan obedece en parte a su deseo de cumplir con una función impuesta por la sociedad; 
+                         quiere tener hijos como las mujeres casadas que viven a su alrededor, pero al no poder tenerlos se libera de la carga matando a su marido.</span>
+                    </p>
+                    <br>
+                    <button onclick="myFunction1()" id="myBtn1">Leer más</button>
+                    <br>
+                    <br>
+                    <a href="https://es.wikipedia.org/wiki/Yerma" style="color: rgb(253, 255, 112);">Pincha aquí para ir a página especializada en el libro</a>
+            </div>
+        </section>
+    </main>  
+    <footer>
+        <h4> → Design by Noé ← </h4>
+    </footer>
+</body>
+</html>
